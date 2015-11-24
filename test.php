@@ -3,5 +3,4 @@ for($i=0; $i<=10; $i++) {
     echo $i; //Ca affiche la variable i BRUH
 }
 
-
-echo("(_)///////////|-)");
+echo("(_)///////////////|-)");
