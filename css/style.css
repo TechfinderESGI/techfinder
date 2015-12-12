@@ -1,0 +1,199 @@
+/** Mobile first ! **/
+body {
+    background: url('../img/stripes.png') top left repeat #E9E4E4;
+    font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
+    color: #2a2a2a;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: "Aero Matics", "Arial Black", Gadget, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+a, a:focus, a:visited {
+    color: #3f3f3f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1c1c1c;
+    text-decoration: underline;
+}
+
+#content {
+    padding: 0 10px;
+    margin-top: 80px;
+}
+
+/** header **/
+header {
+    background-color: #E6DADD;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header .container {
+    padding: 0;
+}
+
+#logo {
+    width: 100%;
+    text-align: center;
+}
+
+#logo img {
+    height: 70px;
+}
+
+#user_box {
+    display: none;
+}
+
+#hamburger {
+    float: left;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #515151;
+    border-radius: 4px;
+    padding: 5px 10px;
+
+    transition: background 0.5s;
+}
+
+#hamburger:hover, #hamburger:focus {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Header : user profile */
+
+/* Header : navigation */
+#main_nav {
+    background: white;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.35s, max-height 1s;
+    max-height: 80vh;
+}
+
+#main_nav li a {
+    text-align: left;
+    padding: 5px 20px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #515151;
+    display: block;
+}
+
+#main_nav.hidden {
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.5s, max-height 0.35s;
+}
+
+#main_nav li a .fa {
+    color: #1c1c1c;
+}
+
+/* Accessibility */
+i.fa + span.legend {
+    display: none;
+}
+
+#logo h1, #logo h2 {
+    display: none;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+    header {
+        max-height: 160px;
+    }
+
+    #content {
+        margin-top: 160px;
+    }
+
+    .container {
+        width: 720px;
+    }
+
+    #logo {
+        width: auto;
+        text-align: left;
+    }
+
+    #logo img {
+        height: 100px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #main_nav {
+        background: transparent;
+        margin-bottom: 10px;
+    }
+
+    #main_nav.hidden {
+        max-height: 80vh;
+        opacity: 1;
+    }
+
+    #main_nav ul {
+        display: flex;
+    }
+
+    #main_nav ul li {
+        /*flex: 1;*/
+    }
+
+    #main_nav ul li a {
+        border: 0;
+        text-align: left;
+    }
+
+    #main_nav ul li a:hover {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    header #logo img {
+        transition: height 0.5s;
+    }
+
+    #main_nav li a {
+        transition: font-size 0.5s;
+    }
+
+    header.minimal #logo img {
+        height: 50px;
+    }
+
+    header.minimal #main_nav li a {
+        font-size: 1em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 940px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
