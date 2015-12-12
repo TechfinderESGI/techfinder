@@ -8,15 +8,44 @@ body {
 
 h1, h2, h3 {
     font-family: "Aero Matics", "Arial Black", Gadget, sans-serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+.accent {
+    color: #CB2227;
 }
 
 .container {
     width: 100%;
     margin: auto;
+    position: relative;
 }
 
 a, a:focus, a:visited {
-    color: #3f3f3f;
+    color: #555555;
     text-decoration: none;
 }
 
@@ -27,24 +56,30 @@ a:hover {
 
 #content {
     padding: 0 10px;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 #content p {
-    margin-bottom: 20px;
+    line-height: 1.2em;
+}
+
+#content p + p {
+    margin-top: 10px;
 }
 
 /** header **/
-header {
+header.main {
     background-color: #E6DADD;
     position: fixed;
     width: 100%;
     top: 0;
 
     min-height: 75px;
+
+    z-index: 50;
 }
 
-header .container {
+header.main .container {
     padding: 0;
 }
 
@@ -59,7 +94,7 @@ header .container {
     padding-top: 10px;
 }
 
-/* Header: user box */
+/* header: user box */
 
 #user_box {
     height: 70px;
@@ -71,6 +106,10 @@ header .container {
     position: absolute;
     top: 5px;
     right: 10px;
+}
+
+#user_box a {
+    color: inherit;
 }
 
 #avatar {
@@ -132,7 +171,7 @@ header .container {
     opacity: 0.7;
 }
 
-/* Header: hamburger */
+/* header: hamburger */
 
 #hamburger {
     float: left;
@@ -153,9 +192,7 @@ header .container {
     background: rgba(0, 0, 0, 0.1);
 }
 
-/* Header: user profile */
-
-/* Header : navigation */
+/* header : navigation */
 #main_nav {
     background: white;
     overflow: hidden;
@@ -180,6 +217,86 @@ header .container {
 
 #main_nav li a .fa {
     color: #1c1c1c;
+}
+
+/* Page */
+#page_title p {
+    margin-bottom: 20px;
+}
+
+/* Main sections */
+section {
+    background: white;
+    border-radius: 5px;
+
+    border: 2px solid #E1DCDC;
+
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+section .call-to-action-btn {
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 3px;
+
+    background-color: #CF3632;
+    color: white;
+
+    padding: 5px 10px;
+
+    display: block;
+
+    margin-top: 20px;
+}
+
+section input.call-to-action-btn {
+    border: none;
+    width: 100%;
+    font: inherit;
+    font-size: 1.2em;
+}
+
+.flux_article h3 {
+    font-size: 1.2em;
+}
+
+.flux_article aside {
+    float: right;
+}
+
+.flux_article aside img {
+    height: 80px;
+}
+
+.flux_article footer {
+    clear: right;
+}
+
+.flux_article .call-to-action-btn {
+    font-size: 1em;
+    width: auto;
+    clear: right;
+    background-color: #E6DADD;
+    color: inherit;
+}
+
+#latest_posts_grid article {
+    margin-bottom: 20px;
+}
+
+#latest_posts_grid article img {
+    max-height: 100px;
+}
+
+/* home */
+#search_main {
+    width: 100%;
+    font: inherit;
+    font-size: 1.6em;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 /* Accessibility */
@@ -228,12 +345,25 @@ i.fa + span.legend {
     }
 }
 
-
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-    header {
+    .hidden-mobile {
+        display: block;
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+    }
+
+    .row .col {
+        flex: 1;
+    }
+
+    header.main {
         max-height: 160px;
     }
+
 
     #content {
         margin-top: 160px;
@@ -284,7 +414,7 @@ i.fa + span.legend {
         font-weight: bold;
     }
 
-    header #logo img {
+    header.main #logo img {
         transition: height 0.5s;
     }
 
@@ -292,11 +422,11 @@ i.fa + span.legend {
         transition: font-size 0.5s;
     }
 
-    header.minimal #logo img {
+    header.main.minimal #logo img {
         height: 50px;
     }
 
-    header.minimal #main_nav li a {
+    header.main.minimal #main_nav li a {
         font-size: 1em;
     }
 
@@ -308,6 +438,14 @@ i.fa + span.legend {
     #avatar {
         margin-left: 20px;
     }
+
+    #latest_posts_grid img {
+        width: 100%;
+    }
+
+    #latest_posts_grid h3 {
+        display: none;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -318,8 +456,8 @@ i.fa + span.legend {
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
+/*@media only screen and (min-width: 1200px) {
     .container {
         width: 1170px;
     }
-}
+}*/

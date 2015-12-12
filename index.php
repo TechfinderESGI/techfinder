@@ -1,88 +1,154 @@
 <?php include("template/header.tpl.php"); ?>
 <div id="content">
     <div class="container">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-            sociis
-            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        <div id="page_title">
+            <h1>Bienvenue sur Tech<span class="accent">Finder</span></h1>
+            <p>
+                Court texte de présentation donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                consequat massa quis enim.
+            </p>
+        </div>
 
-        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-            venenatis
-            vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-            semper
-            nisi. Aenean vulputate eleifend tellus.</p>
+        <section>
+            <h2>Flux</h2>
 
-        <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
-            quis,
-            feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-            ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+            <article class="flux_article">
+                <aside><img src="//placehold.it/100"/></aside>
 
-        <p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
-            amet
-            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas
-            nec
-            odio
-            et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet
-            orci
-            eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-            Sed
-            consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                <header>
+                    <h3>
+                        <a href="#" class="username">
+                            <em>@</em>someone
+                        </a> à publié
+                    </h3>
+                </header>
 
-        <p>Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-            sem.
-            Nulla consequat massa quis enim.</p>
+                <p>
+                    J'ai testé le nouveau
+                    <a href="#" class="hashtag">#macbook</a>
+                </p>
 
-        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-            venenatis
-            vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-            semper
-            nisi. Aenean vulputate eleifend tellus.</p>
+                <p>
+                    <a href="#" class="call-to-action-btn">Lire l'article</a>
+                </p>
 
-        <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
-            quis,
-            feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-            ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+                <footer>
+                    <a href="#">Il y à 20 minutes</a>
+                    <a href="#">Répondre</a>
+                    <nav>
 
-        <p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
-            amet
-            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas
-            nec
-            odio
-            et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet
-            orci
-            eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-            Sed
-            consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                    </nav>
+                </footer>
+            </article>
 
-        <p>Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-            sem.
-            Nulla consequat massa quis enim.</p>
+            <article class="flux_article">
+                <aside><img src="//placehold.it/100"/></aside>
 
-        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-            venenatis
-            vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-            semper
-            nisi. Aenean vulputate eleifend tellus.</p>
+                <header>
+                    <h3>
+                        <a href="#" class="username">
+                            <em>@</em>someonelse
+                        </a> à publié
+                    </h3>
+                </header>
 
-        <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
-            quis,
-            feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-            ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+                <p>
+                    J'ai testé le nouveau
+                    <a href="#" class="hashtag">#macbook</a>
+                </p>
 
-        <p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
-            amet
-            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas
-            nec
-            odio
-            et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet
-            orci
-            eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-            Sed
-            consequat, leo eget bibendum sodales, augue velit cursus nunc,
+                <p>
+                    <a href="#" class="call-to-action-btn">Lire l'article</a>
+                </p>
+
+                <footer>
+                    <a href="#">Il y à 20 minutes</a>
+                    <a href="#">Répondre</a>
+                </footer>
+            </article>
+
+            <p>
+                <a href="#" class="call-to-action-btn">Parcourir le flux</a>
+            </p>
+        </section>
+
+        <section id="latest_posts_grid">
+            <h2>Derniers objets publiés</h2>
+
+            <div class="row">
+                <article class="col">
+                    <h3>Post title</h3>
+                    <a href="#">
+                        <img src="//placehold.it/200"/>
+                    </a>
+                </article>
+                <article class="col">
+                    <h3>Post title</h3>
+                    <a href="#">
+                        <img src="//placehold.it/200"/>
+                    </a>
+                </article>
+                <article class="col">
+                    <h3>Post title</h3>
+                    <a href="#">
+                        <img src="//placehold.it/200"/>
+                    </a>
+                </article>
+            </div>
+            <div class="hidden-mobile">
+                <div class="row">
+                    <article class="col">
+                        <h3>Post title</h3>
+                        <a href="#">
+                            <img src="//placehold.it/200"/>
+                        </a>
+                    </article>
+                    <article class="col">
+                        <h3>Post title</h3>
+                        <a href="#">
+                            <img src="//placehold.it/200"/>
+                        </a>
+                    </article>
+                    <article class="col">
+                        <h3>Post title</h3>
+                        <a href="#">
+                            <img src="//placehold.it/200"/>
+                        </a>
+                    </article>
+                    <article class="col">
+                        <h3>Post title</h3>
+                        <a href="#">
+                            <img src="//placehold.it/200"/>
+                        </a>
+                    </article>
+                    <article class="col">
+                        <h3>Post title</h3>
+                        <a href="#">
+                            <img src="//placehold.it/200"/>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <p>
+                <a href="#" class="call-to-action-btn">Consulter le catalogue</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Une recherche spécifique ?</h2>
+
+            <form>
+                <p id="search_pro_tips"></p>
+                <p>
+                    <input type="text" name="q" placeholder="Rechercher dans les posts et les objets"
+                           id="search_main">
+                </p>
+                <p>
+                    <input type="submit" value="Trouver" class="call-to-action-btn">
+                </p>
+            </form>
+        </section>
+
     </div>
 </div>
 <?php include("template/footer.tpl.php"); ?>

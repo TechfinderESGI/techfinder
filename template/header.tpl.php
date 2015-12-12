@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<header>
+<header class="main">
     <div class="container">
         <div class="hamburger">
             <a href="#" id="hamburger"><i class="fa fa-bars"> </i> <span class="legend">Menu</span></a>
@@ -37,12 +37,12 @@
 
         <div id="user_box">
             <p class="avatar">
-                <img src="//www.gravatar.com/avatar/2da76168dead1c8598619e231422a2ce" id="avatar">
+                <img src="//placehold.it/60/C22126/000?text=AVATAR" id="avatar">
             </p>
 
             <div class="info">
                 <p id="user_info">
-                    <strong>Xorus</strong>
+                    <strong>Username</strong>
                     <em>Level 1</em>
                 </p>
                 <ul>
