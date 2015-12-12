@@ -1,4 +1,5 @@
-var tfmain = {
+"use strict";
+var tf = {
     el: {
         hamburger: '#hamburger',
         menu: '#main_nav',
@@ -11,17 +12,17 @@ var tfmain = {
     },
     init: {
         hamburger: function () {
-            $(tfmain.el.menu).addClass('hidden');
-            $(tfmain.el.hamburger).click(function (e) {
-                $(tfmain.el.menu).toggleClass('hidden');
+            $(tf.el.menu).addClass('hidden');
+            $(tf.el.hamburger).click(function (e) {
+                $(tf.el.menu).toggleClass('hidden');
                 e.preventDefault();
             });
         },
         main: function () {
-            tfmain.init.hamburger();
+            tf.init.hamburger();
 
-            $(window).resize(tfmain.event.resize);
-            $(window).scroll(tfmain.event.scroll);
+            $(window).resize(tf.event.resize);
+            $(window).scroll(tf.event.scroll);
         }
     },
     event: {
@@ -31,15 +32,15 @@ var tfmain = {
         },
         scroll: function() {
             var y = $(window).scrollTop();
-            if (y > $(window).height() / 4) {
-                $(tfmain.el.header).addClass('minimal');
+            if (y > $(tf.el.header).height() / 4) {
+                $(tf.el.header).addClass('minimal');
             } else {
-                $(tfmain.el.header).removeClass('minimal');
+                $(tf.el.header).removeClass('minimal');
             }
         }
     }
 };
 
 $(function () {
-    tfmain.init.main();
+    tf.init.main();
 });
