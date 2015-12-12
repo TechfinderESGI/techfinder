@@ -13,52 +13,51 @@
             <h2>Flux</h2>
 
             <article class="flux_article">
-                <aside><img src="//placehold.it/100"/></aside>
-
                 <header>
                     <h3>
                         <a href="#" class="username">
-                            <em>@</em>someone
-                        </a> à publié
+                            <em>@</em>gamer42
+                        </a> à commenté l'item truc
                     </h3>
                 </header>
 
-                <p>
-                    J'ai testé le nouveau
-                    <a href="#" class="hashtag">#macbook</a>
-                </p>
+                <aside><img src="img/placeholder.png"/></aside>
+
+                <div>
+                <p>Lorem ipsum <a href="#" class="hashtag">#dolor</a> sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                </div>
 
                 <p>
-                    <a href="#" class="call-to-action-btn">Lire l'article</a>
+                    <a href="#" class="call-to-action-btn">Lire le post</a>
                 </p>
 
                 <footer>
-                    <a href="#">Il y à 20 minutes</a>
-                    <a href="#">Répondre</a>
-                    <nav>
-
-                    </nav>
+                    <a href="#">Posté il y à 20 minutes</a> -
+                    <a href="#">Répondre à gamer42</a>
                 </footer>
             </article>
 
             <article class="flux_article">
-                <aside><img src="//placehold.it/100"/></aside>
-
                 <header>
                     <h3>
                         <a href="#" class="username">
                             <em>@</em>someonelse
-                        </a> à publié
+                        </a> à publié un comparatif
                     </h3>
                 </header>
 
-                <p>
-                    J'ai testé le nouveau
-                    <a href="#" class="hashtag">#macbook</a>
-                </p>
+                <aside><img src="img/placeholder.png"/></aside>
+
+                <div>
+                    <p>Lorem ipsum dolor VS sit amet<br />
+                        Aenean commodo ligula eget dolor. Aenean
+                        massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
 
                 <p>
-                    <a href="#" class="call-to-action-btn">Lire l'article</a>
+                    <a href="#" class="call-to-action-btn">Voir le comparatif</a>
                 </p>
 
                 <footer>
@@ -79,19 +78,19 @@
                 <article class="col">
                     <h3>Post title</h3>
                     <a href="#">
-                        <img src="//placehold.it/200"/>
+                        <img src="img/placeholder.png"/>
                     </a>
                 </article>
                 <article class="col">
                     <h3>Post title</h3>
                     <a href="#">
-                        <img src="//placehold.it/200"/>
+                        <img src="img/placeholder.png"/>
                     </a>
                 </article>
                 <article class="col">
                     <h3>Post title</h3>
                     <a href="#">
-                        <img src="//placehold.it/200"/>
+                        <img src="img/placeholder.png"/>
                     </a>
                 </article>
             </div>
@@ -100,31 +99,31 @@
                     <article class="col">
                         <h3>Post title</h3>
                         <a href="#">
-                            <img src="//placehold.it/200"/>
+                            <img src="img/placeholder.png"/>
                         </a>
                     </article>
                     <article class="col">
                         <h3>Post title</h3>
                         <a href="#">
-                            <img src="//placehold.it/200"/>
+                            <img src="img/placeholder.png"/>
                         </a>
                     </article>
                     <article class="col">
                         <h3>Post title</h3>
                         <a href="#">
-                            <img src="//placehold.it/200"/>
+                            <img src="img/placeholder.png"/>
                         </a>
                     </article>
                     <article class="col">
                         <h3>Post title</h3>
                         <a href="#">
-                            <img src="//placehold.it/200"/>
+                            <img src="img/placeholder.png"/>
                         </a>
                     </article>
                     <article class="col">
                         <h3>Post title</h3>
                         <a href="#">
-                            <img src="//placehold.it/200"/>
+                            <img src="img/placeholder.png"/>
                         </a>
                     </article>
                 </div>

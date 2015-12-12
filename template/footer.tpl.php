@@ -1,6 +1,11 @@
-<footer>
+<footer class="main">
     <div class="container">
-
+        <p>
+            &copy; Tech<span class="accent">Finder</span> 2015
+        </p>
+        <p>
+            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
     </div>
 </footer>
 

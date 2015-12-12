@@ -37,7 +37,7 @@
 
         <div id="user_box">
             <p class="avatar">
-                <img src="//placehold.it/60/C22126/000?text=AVATAR" id="avatar">
+                <img src="img/placeholder_avatar.png" id="avatar">
             </p>
 
             <div class="info">
@@ -47,7 +47,7 @@
                 </p>
                 <ul>
                     <li>
-                        <a href="#" title="Notifications">
+                        <a href="#" title="Notifications" class="notify">
                             <span class="badge">2</span>
                             <i class="fa fa-bell"> </i>
                             <span class="legend">2 Notifications</span>

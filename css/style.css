@@ -171,6 +171,10 @@ header.main .container {
     opacity: 0.7;
 }
 
+#user_box li a.notify {
+    color: #CB2227;
+}
+
 /* header: hamburger */
 
 #hamburger {
@@ -219,6 +223,11 @@ header.main .container {
     color: #1c1c1c;
 }
 
+footer.main {
+    margin: 40px 0;
+    text-align: center;
+}
+
 /* Page */
 #page_title p {
     margin-bottom: 20px;
@@ -257,8 +266,16 @@ section input.call-to-action-btn {
     font-size: 1.2em;
 }
 
+.flux_article {
+    margin-bottom: 40px;
+}
+
 .flux_article h3 {
     font-size: 1.2em;
+}
+
+.flux_article h3 em {
+    opacity: 0.5;
 }
 
 .flux_article aside {
@@ -267,6 +284,11 @@ section input.call-to-action-btn {
 
 .flux_article aside img {
     height: 80px;
+}
+
+.flux_article div {
+    border-left: 2px solid #E6DADD;
+    padding-left: 10px;
 }
 
 .flux_article footer {
@@ -441,6 +463,7 @@ i.fa + span.legend {
 
     #latest_posts_grid img {
         width: 100%;
+        max-height: 200px;
     }
 
     #latest_posts_grid h3 {
