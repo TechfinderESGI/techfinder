@@ -13,6 +13,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2em;
+    color: #CB2227;
 }
 
 h2 {
@@ -231,6 +232,7 @@ footer.main {
 /* Page */
 #page_title p {
     margin-bottom: 20px;
+    font-size: 1.1em;
 }
 
 /* Main sections */
@@ -264,6 +266,7 @@ section input.call-to-action-btn {
     width: 100%;
     font: inherit;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 .flux_article {
@@ -476,11 +479,26 @@ i.fa + span.legend {
     .container {
         width: 940px;
     }
+
+
+    .d-row {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .d-col {
+        flex: 1;
+    }
+
+    .d-col-main {
+        flex: 2;
+        padding-right: 20px;
+    }
 }
 
 /* Large Devices, Wide Screens */
-/*@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .container {
         width: 1170px;
     }
-}*/
+}
