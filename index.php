@@ -1,4 +1,7 @@
-<?php include("template/header.tpl.php"); ?>
+<?php
+$connected = true;
+include("template/header.tpl.php");
+?>
 <div id="content">
     <div class="container">
         <div id="page_title">

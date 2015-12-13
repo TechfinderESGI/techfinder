@@ -20,7 +20,7 @@ h2 {
     font-size: 1.5em;
 }
 
-.hidden-mobile {
+span.hidden, .hidden-mobile {
     display: none;
 }
 
@@ -176,6 +176,15 @@ header.main .container {
     color: #CB2227;
 }
 
+#user_box .disconnected ul {
+    margin-top: 10px;
+}
+
+#user_box .disconnected li {
+    display: block;
+    font-size: 0.8em;
+}
+
 /* header: hamburger */
 
 #hamburger {
@@ -324,6 +333,86 @@ section input.call-to-action-btn {
     -moz-box-sizing: border-box;
 }
 
+/* user */
+.user-avatar {
+    border-radius: 50%;
+    border: 5px solid #E6DADD;
+}
+
+#page_title.user-profile {
+    clear: both;
+    height: 150px;
+}
+
+#page_title.user-profile .avatar img {
+    float: left;
+    height: 120px;
+    margin-right: 20px;
+}
+
+#page_title.user-profile h1 {
+    font-size: 38px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+#page_title.user-profile .facts {
+    font-size: 14px;
+}
+
+#user_posts article {
+    margin-bottom: 20px;
+}
+
+#user_posts article aside {
+    float: left;
+}
+
+#user_posts article aside img {
+    width: 50px;
+}
+
+#user_posts article h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#user_posts article h3 a {
+    color: inherit;
+}
+
+#user_posts article div.content {
+    margin-left: 60px;
+}
+
+#user_posts article, #user_posts p.action {
+    clear: left;
+}
+
+.user-grid {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.user-grid a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #89A9D4;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin: 0 5px 5px 0;
+}
+
+.user-grid a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 /* Accessibility */
 i.fa + span.legend {
     display: none;
@@ -388,7 +477,6 @@ i.fa + span.legend {
     header.main {
         max-height: 160px;
     }
-
 
     #content {
         margin-top: 160px;
@@ -480,6 +568,9 @@ i.fa + span.legend {
         width: 940px;
     }
 
+    .d-row + .d-row {
+        margin-top: 40px;
+    }
 
     .d-row {
         display: flex;
@@ -492,7 +583,20 @@ i.fa + span.legend {
 
     .d-col-main {
         flex: 2;
+    }
+
+    .d-col:first-child {
         padding-right: 20px;
+    }
+
+    .d-row-stretch-section .d-col {
+        align-items: stretch;
+    }
+
+    .d-row-stretch-section .d-col > section {
+        height: 100%;
+        margin: 0;
+        padding-bottom: 0;
     }
 }
 

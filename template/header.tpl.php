@@ -36,37 +36,59 @@
         </nav>
 
         <div id="user_box">
-            <p class="avatar">
-                <img src="img/placeholder_avatar.png" id="avatar">
-            </p>
-
-            <div class="info">
-                <p id="user_info">
-                    <strong>Username</strong>
-                    <em>Level 1</em>
+            <?php if (isset($connected) && $connected): ?>
+                <p class="avatar">
+                    <img src="img/placeholder_avatar.png" id="avatar">
                 </p>
-                <ul>
-                    <li>
-                        <a href="#" title="Notifications" class="notify">
-                            <span class="badge">2</span>
-                            <i class="fa fa-bell"> </i>
-                            <span class="legend">2 Notifications</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Réglages">
-                            <i class="fa fa-cog"> </i>
-                            <span class="legend">Réglages</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Déconnexion">
-                            <i class="fa fa-sign-out"> </i>
-                            <span class="legend">Déconnexion</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
+                <div class="info">
+                    <p id="user_info">
+                        <strong>Username</strong>
+                        <em>Level 1</em>
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#" title="Notifications" class="notify">
+                                <span class="badge">2</span>
+                                <i class="fa fa-bell"> </i>
+                                <span class="legend">2 Notifications</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Réglages">
+                                <i class="fa fa-cog"> </i>
+                                <span class="legend">Réglages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Déconnexion">
+                                <i class="fa fa-sign-out"> </i>
+                                <span class="legend">Déconnexion</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <?php else: ?>
+                <div class="info disconnected">
+                    <ul>
+                        <li>
+                            <a href="#" title="Inscription">
+                                <i class="fa fa-user-plus"> </i>
+                                <span class="legend">Inscription</span>
+                                Inscription
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Connexion">
+                                <i class="fa fa-sign-in"> </i>
+                                <i class="fa fa-twitter"> </i>
+                                <span class="legend">Connexion</span>
+                                Connexion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </header>

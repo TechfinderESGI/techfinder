@@ -4,7 +4,11 @@
             &copy; Tech<span class="accent">Finder</span> 2015
         </p>
         <p>
-            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            <a href="#">Contactez nous</a>
+            &dash;
+            <a href="#">CGU</a>
+            &dash;
+            <a href="#">Mentions légales</a>
         </p>
     </div>
 </footer>
